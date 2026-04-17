@@ -26,7 +26,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             <a href="#collections" className="transition hover:text-orange-300">
               Collections
             </a>
-            <a href="#about" className="transition hover:text-orange-300">
+            <a href="/about" className="transition hover:text-orange-300">
               About
             </a>
             <a href="#contact" className="transition hover:text-orange-300">
