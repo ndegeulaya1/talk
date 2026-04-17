@@ -17,8 +17,8 @@ export function loader({ context }: Route.LoaderArgs) {
 export default function Home({ loaderData }: Route.ComponentProps) {
   return (
     <div className="min-h-screen bg-slate-100 text-slate-800">
-      <header className="border-b border-slate-700 bg-slate-900 text-slate-100">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-5">
+      <header className="sticky top-0 z-50 border-b border-slate-700 bg-slate-900 text-slate-100">
+        <div className="mx-auto flex w-[1108px] items-center justify-between px-6 py-5">
           <a href="/" className="text-lg font-semibold tracking-wide">
             HouseTalk
           </a>
@@ -35,7 +35,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           </nav>
           <a
             href="/contact"
-            className="rounded-full bg-orange-300 px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-orange-200"
+            className="rounded-full bg-blue-400 px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-blue-300"
           >
             Get Started
           </a>
@@ -121,16 +121,16 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             </p>
           </div>
           <div className="rounded-xl bg-slate-100 p-5">
-            <p className="text-sm text-slate-600">
-              From first inspiration to final styling, our team helps you
-              choose pieces that fit your home and your pace of life.
-            </p>
             <a
               href="/contact"
-              className="mt-4 inline-flex rounded-full bg-slate-900 px-5 py-2 text-sm font-medium text-white transition hover:bg-slate-700"
+              className="inline-flex rounded-full bg-slate-900 px-5 py-2 text-sm font-medium text-white transition hover:bg-slate-700"
             >
               Book a consultation
             </a>
+            <p className="mt-4 text-sm text-slate-600">
+              From first inspiration to final styling, our team helps you
+              choose pieces that fit your home and your pace of life.
+            </p>
           </div>
         </section>
       </main>
@@ -176,7 +176,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 Contact
               </h3>
               <p className="mt-4 text-sm leading-7 text-slate-400">
-                hello@housetalk.com
+                ndegeulay@gmail.com
                 <br />
                 +1 (212) 555-0109
                 <br />
