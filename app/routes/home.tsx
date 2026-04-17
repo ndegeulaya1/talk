@@ -29,12 +29,12 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             <a href="/about" className="transition hover:text-orange-300">
               About
             </a>
-            <a href="#contact" className="transition hover:text-orange-300">
+            <a href="/contact" className="transition hover:text-orange-300">
               Contact
             </a>
           </nav>
           <a
-            href="#contact"
+            href="/contact"
             className="rounded-full bg-orange-300 px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-orange-200"
           >
             Get Started
@@ -126,7 +126,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               choose pieces that fit your home and your pace of life.
             </p>
             <a
-              href="#contact"
+              href="/contact"
               className="mt-4 inline-flex rounded-full bg-slate-900 px-5 py-2 text-sm font-medium text-white transition hover:bg-slate-700"
             >
               Book a consultation
