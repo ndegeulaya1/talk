@@ -23,7 +23,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             HouseTalk
           </a>
           <nav className="hidden items-center gap-8 text-sm md:flex">
-            <a href="#collections" className="transition hover:text-orange-300">
+            <a href="/collections" className="transition hover:text-orange-300">
               Collections
             </a>
             <a href="/about" className="transition hover:text-orange-300">
@@ -59,7 +59,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 </p>
               </div>
               <a
-                href="#collections"
+                href="/collections"
                 className="mt-10 inline-flex w-fit rounded-full bg-orange-300 px-6 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-orange-200"
               >
                 Explore Pieces
@@ -154,7 +154,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               </h3>
               <ul className="mt-4 space-y-2 text-sm text-slate-400">
                 <li>
-                  <a href="#collections" className="transition hover:text-orange-300">
+                  <a href="/collections" className="transition hover:text-orange-300">
                     Collections
                   </a>
                 </li>
