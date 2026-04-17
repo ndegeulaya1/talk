@@ -135,33 +135,83 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         </section>
       </main>
 
-      <footer id="contact" className="mt-10 bg-slate-900 text-slate-200">
-        <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-10 md:grid-cols-3">
-          <div>
-            <h3 className="text-base font-semibold text-white">HouseTalk</h3>
-            <p className="mt-2 text-sm text-slate-400">
-              Premium interior style made simple for modern homes.
-            </p>
+      <footer id="contact" className="mt-12 bg-slate-950 text-slate-200">
+        <div className="mx-auto w-full max-w-6xl px-6 py-12">
+          <div className="grid gap-10 border-b border-slate-800 pb-10 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_1.2fr]">
+            <div>
+              <a href="/" className="text-lg font-semibold tracking-wide text-white">
+                HouseTalk
+              </a>
+              <p className="mt-3 max-w-xs text-sm leading-6 text-slate-400">
+                Premium interior style for modern homes, crafted with calm
+                aesthetics and practical comfort.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-300">
+                Quick Links
+              </h3>
+              <ul className="mt-4 space-y-2 text-sm text-slate-400">
+                <li>
+                  <a href="#collections" className="transition hover:text-orange-300">
+                    Collections
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" className="transition hover:text-orange-300">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="transition hover:text-orange-300">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-300">
+                Contact
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-slate-400">
+                hello@housetalk.com
+                <br />
+                +1 (212) 555-0109
+                <br />
+                45 Harmony Avenue, New York, NY 10001
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-300">
+                Stay Updated
+              </h3>
+              <p className="mt-4 text-sm leading-6 text-slate-400">
+                Receive curated interior insights and product drops in your
+                inbox.
+              </p>
+              <form className="mt-5 flex flex-col gap-3 sm:flex-row">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full rounded-full border border-slate-700 bg-slate-900 px-4 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 focus:border-orange-300 focus:outline-none"
+                />
+                <button
+                  type="button"
+                  className="rounded-full bg-orange-300 px-5 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-orange-200"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
           </div>
-          <div>
-            <h3 className="text-base font-semibold text-white">Visit</h3>
-            <p className="mt-2 text-sm text-slate-400">
-              45 Harmony Avenue
-              <br />
-              New York, NY 10001
-            </p>
+
+          <div className="flex flex-col gap-3 pt-6 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
+            <p>© {new Date().getFullYear()} HouseTalk. All rights reserved.</p>
+            <p>Cloudflare message: {loaderData.message}</p>
           </div>
-          <div>
-            <h3 className="text-base font-semibold text-white">Contact</h3>
-            <p className="mt-2 text-sm text-slate-400">
-              hello@housetalk.com
-              <br />
-              +1 (212) 555-0109
-            </p>
-          </div>
-        </div>
-        <div className="border-t border-slate-800 px-6 py-4 text-center text-xs text-slate-500">
-          Cloudflare message: {loaderData.message}
         </div>
       </footer>
     </div>
