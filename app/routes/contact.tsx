@@ -23,6 +23,9 @@ export default function Contact() {
             <a href="/" className="transition hover:text-orange-300">
               Home
             </a>
+            <a href="/collections" className="transition hover:text-orange-300">
+              Collections
+            </a>
             <a href="/about" className="transition hover:text-orange-300">
               About
             </a>
