@@ -44,12 +44,12 @@ export default function About() {
             <a href="/about" className="text-orange-300">
               About
             </a>
-            <a href="/#contact" className="transition hover:text-orange-300">
+            <a href="/contact" className="transition hover:text-orange-300">
               Contact
             </a>
           </nav>
           <a
-            href="/#contact"
+            href="/contact"
             className="rounded-full bg-orange-300 px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-orange-200"
           >
             Talk to Us
